@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="chromeTest">
+	<parameter name="browser" value="chrome"></parameter>  
+<classes>
+      <!--><class name="executePageClass.ExecuteClientPageClass"/>/-->
+      <class name="executePageClass.ExecuteDeductionPageClass"/>
+      <class name="executePageClass.ExecuteLoginPageClass"/>
+      <class name="executePageClass.ExecuteDashBoardPageClass"/>
+      <class name="executePageClass.ExecuteWorkersPageClass"/>
+    </classes>
+</test> <!-- Test -->
+  
+  <test thread-count="5" name="edgeTest">
+	<parameter name="browser" value="edge"></parameter>  
+<classes>
+      <class name="executePageClass.ExecuteClientPageClass"/>
+      <class name="executePageClass.ExecuteDeductionPageClass"/>
+      <class name="executePageClass.ExecuteLoginPageClass"/>
+      <class name="executePageClass.ExecuteDashBoardPageClass"/>
+      <class name="executePageClass.ExecuteWorkersPageClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
